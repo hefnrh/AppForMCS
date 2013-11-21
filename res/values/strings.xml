@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppForMCS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="status">status:</string>
+    <string name="timeused">time used:</string>
+    <string name="run">run 10W multiply</string>
+    <string name="change10W2">another test</string>
+    <string name="exit">exit</string>
+
+</resources>
