@@ -11,23 +11,23 @@
 
     <TabHost
         android:id="@android:id/tabhost"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
         <TabWidget
             android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <FrameLayout
             android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:paddingTop="@dimen/tab_content_top" >
 
             <RelativeLayout
                 android:id="@+id/multiplylayout"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
                 <TextView
@@ -70,7 +70,7 @@
 
             <RelativeLayout
                 android:id="@+id/MCSLayout"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
                 <TextView
@@ -85,5 +85,14 @@
             </RelativeLayout>
         </FrameLayout>
     </TabHost>
+
+    <Button
+        android:id="@+id/srcButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="viewSrc"
+        android:text="@string/viewsrc"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

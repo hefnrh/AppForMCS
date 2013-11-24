@@ -9,5 +9,6 @@
     <string name="run">run 10W multiply</string>
     <string name="change10W2">another test</string>
     <string name="exit">exit</string>
+    <string name="viewsrc">view source vode</string>
 
 </resources>

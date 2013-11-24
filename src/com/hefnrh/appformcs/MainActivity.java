@@ -6,6 +6,8 @@ import tools.Counter;
 import tools.MultiThreadTest;
 import abstractmath.Field28;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -124,5 +126,10 @@ public class MainActivity extends Activity {
 		}
 		return c.getTime();
 	}
-
+	
+	public void viewSrc(View v) {
+		Uri uri = Uri.parse("https://github.com/hefnrh/AppForMCS");
+		Intent it = new Intent(Intent.ACTION_VIEW, uri);
+		startActivity(it);
+	}
 }
