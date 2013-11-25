@@ -107,8 +107,8 @@ public class MainActivity extends Activity {
 	}
 
 	private long multiThreadTest(int n) {
-		byte p = 14; // 00001110
-		p |= -128; // 10001110 x^8 + x^4 + x^3 + x^2 + 1
+		byte p = 13; // 00001101
+		p |= -128; // 10001101 x^8 + x^4 + x^3 + x + 1
 		Field28 field = new Field28(p);
 		Counter c = new Counter();
 		CountDownLatch cdl = new CountDownLatch(n);
