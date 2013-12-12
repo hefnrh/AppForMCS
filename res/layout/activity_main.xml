@@ -23,6 +23,7 @@
             android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingBottom="@dimen/tab_content_bottom"
             android:paddingTop="@dimen/tab_content_top" >
 
             <RelativeLayout
@@ -79,9 +80,14 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentRight="true"
+                    android:clickable="true"
                     android:inputType="none"
-                    android:text="@string/status"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    android:textIsSelectable="true"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="vertical"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/mcsresult" />
             </RelativeLayout>
         </FrameLayout>
     </TabHost>

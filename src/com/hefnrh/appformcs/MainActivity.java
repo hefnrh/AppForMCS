@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -63,8 +64,11 @@ public class MainActivity extends Activity {
 
 		spec = tabHost.newTabSpec("mcs");
 		spec.setContent(R.id.MCSLayout);
-		spec.setIndicator("MCS");
+		spec.setIndicator("FUNCTIONS");
 		tabHost.addTab(spec);
+		
+		TextView mcsTv = (TextView) findViewById(R.id.mscTextView1);
+		mcsTv.setMovementMethod(ScrollingMovementMethod.getInstance());
 	}
 
 	@Override
